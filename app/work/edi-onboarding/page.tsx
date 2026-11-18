@@ -58,6 +58,12 @@ export default function EdiOnboardingCaseStudy() {
                 >
                   Automating an EDI Onboarding Workflow
                 </Link>
+              <Link
+                href="/work/edi-operations"
+                className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
+              >
+                EDI Operations Process Analysis &amp; Workflow Optimization
+              </Link>
               </div>
             </aside>
           </div>
@@ -416,6 +422,12 @@ export default function EdiOnboardingCaseStudy() {
                 className="text-base font-normal leading-6 text-blue-700 transition hover:text-blue-900"
               >
                 Automating an EDI Onboarding Workflow
+              </Link>
+              <Link
+                href="/work/edi-operations"
+                className="text-base font-normal leading-6 text-blue-700 transition hover:text-blue-900"
+              >
+                EDI Operations Process Analysis &amp; Workflow Optimization
               </Link>
             </div>
           </div>
