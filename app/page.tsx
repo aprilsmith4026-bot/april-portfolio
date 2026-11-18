@@ -88,8 +88,42 @@ export default function Home() {
                 >
                   Automating an EDI Onboarding Workflow
                 </Link>
+              <Link
+                href="/work/edi-operations"
+                className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
+              >
+                EDI Operations Process Analysis &amp; Workflow Optimization
+              </Link>
               </div>
             </aside>
+
+            {/* EDI OPERATIONS PROCESS ANALYSIS */}
+            <article className="rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+                Process Analysis &amp; Optimization
+              </p>
+              <h3 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
+                EDI Operations Process Analysis &amp; Workflow Optimization
+              </h3>
+              <p className="mt-4 text-lg leading-7 text-zinc-600">
+                Mapping current and future workflows, reducing manual work, and validating Jira backlog data against B2B activity.
+              </p>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl bg-blue-50 p-4">
+                  <p className="text-4xl font-bold text-blue-700">50%</p>
+                  <p className="mt-1 font-medium text-zinc-700">Less time for one manual task</p>
+                </div>
+                <div className="rounded-2xl bg-zinc-100 p-5">
+                  <p className="text-4xl font-bold text-zinc-800">1,100+</p>
+                  <p className="mt-1 font-medium text-zinc-700">Tickets analyzed</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Link href="/work/edi-operations" className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700 transition hover:text-blue-900">
+                  Read case study
+                </Link>
+              </div>
+            </article>
           </div>
 
           {/* NEXT SECTION */}
@@ -344,6 +378,12 @@ export default function Home() {
                 className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
               >
                 Automating an EDI Onboarding Workflow
+              </Link>
+              <Link
+                href="/work/edi-operations"
+                className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
+              >
+                EDI Operations Process Analysis &amp; Workflow Optimization
               </Link>
             </div>
           </div>
