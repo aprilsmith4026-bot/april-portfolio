@@ -94,6 +94,12 @@ export default function Home() {
               >
                 EDI Operations Process Analysis &amp; Workflow Optimization
               </Link>
+              <Link
+                href="/work/shared-inbox"
+                className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
+              >
+                EDI Shared Inbox Consolidation
+              </Link>
               </div>
             </aside>
 
@@ -256,6 +262,33 @@ export default function Home() {
                 </Link>
               </div>
             </article>
+            {/* SHARED INBOX PROJECT */}
+            <article className="rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+                Process Improvement
+              </p>
+              <h3 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
+                EDI Shared Inbox Consolidation
+              </h3>
+              <p className="mt-4 text-lg leading-7 text-zinc-600">
+                Coordinating with IT to replace a long-established email workflow, reduce duplicate work, and give the team a shared view of completed messages.
+              </p>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl bg-blue-50 p-4">
+                  <p className="text-4xl font-bold text-blue-700">5</p>
+                  <p className="mt-1 font-medium text-zinc-700">Individual inboxes replaced</p>
+                </div>
+                <div className="rounded-2xl bg-zinc-100 p-5">
+                  <p className="text-4xl font-bold text-zinc-800">850k+</p>
+                  <p className="mt-1 font-medium text-zinc-700">Estimated annual email actions in the old workflow</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Link href="/work/shared-inbox" className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700 transition hover:text-blue-900">
+                  Read case study
+                </Link>
+              </div>
+            </article>
           </div>
 
           {/* NEXT SECTION */}
@@ -385,6 +418,12 @@ export default function Home() {
                 className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
               >
                 EDI Operations Process Analysis &amp; Workflow Optimization
+              </Link>
+              <Link
+                href="/work/shared-inbox"
+                className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
+              >
+                EDI Shared Inbox Consolidation
               </Link>
             </div>
           </div>
