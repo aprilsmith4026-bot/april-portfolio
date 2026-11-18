@@ -10,6 +10,7 @@ const studies = [
   { href: "/work/edi-migration", name: "EDI Integration Migration After an Acquisition" },
   { href: "/work/edi-onboarding", name: "Automating an EDI Onboarding Workflow" },
   { href: "/work/edi-operations", name: "EDI Operations Process Analysis & Workflow Optimization" },
+  { href: "/work/shared-inbox", name: "EDI Shared Inbox Consolidation" },
 ];
 
 export default function EdiOperationsCaseStudy() {
