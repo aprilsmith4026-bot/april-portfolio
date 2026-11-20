@@ -52,7 +52,7 @@ export default function EdiOperationsCaseStudy() {
 
       <section className="border-b border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Project Overview</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="project-overview">Project Overview</h2>
           <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-16">
             <div>
               <h3 className="text-lg font-bold text-blue-700">The problem</h3>
@@ -72,7 +72,7 @@ export default function EdiOperationsCaseStudy() {
 
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Current State to Future State</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="current-future-state">Current State to Future State</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-600">
             I started by looking at the steps employees followed each day. I documented the workflow in Microsoft Visio, identified repeated work, and mapped how the process could be handled with fewer manual steps.
           </p>
@@ -101,7 +101,7 @@ export default function EdiOperationsCaseStudy() {
 
       <section className="border-y border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">VBA Automation</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="vba-automation">VBA Automation</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">
             I modified existing Excel VBA code to reduce repetitive work, including bulk email communications, retrieving and attaching files, and bulk Jira ticket updates and closures.
           </p>
@@ -116,7 +116,7 @@ export default function EdiOperationsCaseStudy() {
 
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Investigating the Jira Backlog</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="backlog-analysis">Investigating the Jira Backlog</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-600">
             I analyzed more than 1,100 tickets to understand completion times and reporting gaps. The analysis showed an average completion time of about 20 business days, with roughly 40% meeting the expected timeframe and about 12% showing certification status discrepancies.
           </p>
@@ -128,7 +128,7 @@ export default function EdiOperationsCaseStudy() {
 
       <section className="border-y border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">JQL Dashboards &amp; Reporting</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="jira-reporting">JQL Dashboards &amp; Reporting</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">
             I built a separate Jira dashboard rather than changing the one the team already used. That let me create new reporting without disrupting their daily work.
           </p>
