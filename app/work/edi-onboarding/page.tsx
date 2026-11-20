@@ -105,7 +105,7 @@ export default function EdiOnboardingCaseStudy() {
       ========================================================= */}
       <section className="border-b border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">
+          <h2 className="text-3xl font-bold tracking-tight" id="project-overview">
             Project Overview
           </h2>
 
@@ -147,7 +147,7 @@ export default function EdiOnboardingCaseStudy() {
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-6xl px-8 py-16">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight">
+            <h2 className="text-3xl font-bold tracking-tight" id="supporting-build">
               Supporting the Build
             </h2>
 
@@ -161,7 +161,7 @@ export default function EdiOnboardingCaseStudy() {
           <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-200 md:grid-cols-4">
             {/* DOCUMENT */}
             <div className="bg-white p-7">
-              <h3 className="text-xl font-bold">
+              <h3 className="text-xl font-bold" id="workflow-documentation">
                 Document
               </h3>
 
@@ -173,7 +173,7 @@ export default function EdiOnboardingCaseStudy() {
 
             {/* TRANSLATE */}
             <div className="bg-white p-7">
-              <h3 className="text-xl font-bold">
+              <h3 className="text-xl font-bold" id="requirements">
                 Translate
               </h3>
 
@@ -181,11 +181,14 @@ export default function EdiOnboardingCaseStudy() {
                 Explained process steps, data requirements, decision points,
                 and known exceptions.
               </p>
+              <p id="sql-queries" className="mt-3 leading-7 text-zinc-600">
+                Provided SQL queries for database access to support the build.
+              </p>
             </div>
 
             {/* VALIDATE */}
             <div className="bg-white p-7">
-              <h3 className="text-xl font-bold">
+              <h3 className="text-xl font-bold" id="testing-validation">
                 Validate
               </h3>
 
@@ -197,7 +200,7 @@ export default function EdiOnboardingCaseStudy() {
 
             {/* PREPARE */}
             <div className="bg-white p-7">
-              <h3 className="text-xl font-bold">
+              <h3 className="text-xl font-bold" id="implementation-prep">
                 Prepare
               </h3>
 
@@ -216,7 +219,7 @@ export default function EdiOnboardingCaseStudy() {
       <section className="border-y border-zinc-200 bg-white">
         <div className="mx-auto max-w-6xl px-8 py-16">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight">
+            <h2 className="text-3xl font-bold tracking-tight" id="workflow-change">
               Workflow Change
             </h2>
 
@@ -379,6 +382,7 @@ export default function EdiOnboardingCaseStudy() {
                 "Requirements",
                 "Process Documentation",
                 "Technical Translation",
+                "SQL",
                 "Developer Collaboration",
                 "Testing",
                 "Problem Solving",

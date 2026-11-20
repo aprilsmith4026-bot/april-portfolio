@@ -44,7 +44,7 @@ export default function SharedInboxCaseStudy() {
       </header>
       <section className="border-b border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Project Overview</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="project-overview">Project Overview</h2>
           <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-16">
             <div>
               <h3 className="text-lg font-bold text-blue-700">The problem</h3>
@@ -60,7 +60,7 @@ export default function SharedInboxCaseStudy() {
       </section>
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Measuring the Existing Work</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="measuring-work">Measuring the Existing Work</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-600">I moved one month's automated messages from my personal inbox into a separate folder and marked them all unread so Outlook displayed a count. I multiplied that count by the five people who received the same messages, then by twelve to estimate annual volume.</p>
           <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-7">
             <p className="text-sm font-semibold uppercase tracking-wider text-blue-700">Baseline estimate</p>
@@ -71,7 +71,7 @@ export default function SharedInboxCaseStudy() {
       </section>
       <section className="border-y border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Coordinating the Change</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="coordinating-change">Coordinating the Change</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">I presented the proposal to my manager and received approval. Then I explained the existing delivery setup to IT and provided the list of people who needed access.</p>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">The legacy address could not simply be converted into a shared mailbox. IT removed the team from the old distribution approach, left the original address with one designated person, and connected it to a new address that differed by one letter. IT handled the configuration so both addresses could continue to work.</p>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -90,7 +90,7 @@ export default function SharedInboxCaseStudy() {
       </section>
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">A Shared Workflow</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="shared-workflow">A Shared Workflow</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-600">I created folders and rules to move automated messages away from the inbox so employees could focus on messages that needed attention. When an email was handled, it went into a Completed folder where everyone could see its status.</p>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-zinc-200 bg-white p-7">
@@ -116,7 +116,7 @@ export default function SharedInboxCaseStudy() {
       </section>
       <section className="border-y border-zinc-200 bg-white">
         <div className="mx-auto max-w-6xl px-8 py-16">
-          <h2 className="text-3xl font-bold tracking-tight">Documentation &amp; Team Adoption</h2>
+          <h2 className="text-3xl font-bold tracking-tight" id="team-adoption">Documentation &amp; Team Adoption</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">I wrote an SOP and demonstrated the new setup to the team. I showed everyone how to add the shared inbox in desktop Outlook and how to access it on the web.</p>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">The team continued using the shared inbox as its regular process. Each of us had assigned days to cover group email. When we weren't covering it, those emails no longer arrived in our personal inboxes, and we could focus on our other work.</p>
         </div>
