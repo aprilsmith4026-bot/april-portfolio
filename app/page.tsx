@@ -196,13 +196,10 @@ export default function Home() {
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-center px-8 py-16">
+      <section className="mx-auto max-w-6xl px-8 pt-12 pb-4 sm:pt-16 sm:pb-6">
         <div className="w-full">
 
-          {/* HERO CONTENT + CASE STUDIES */}
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start">
-
-            {/* LEFT SIDE */}
+          {/* INTRODUCTION */}
             <div className="max-w-4xl">
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
                 Implementation • Integration • Automation
@@ -251,52 +248,55 @@ export default function Home() {
               </div>
             </div>
 
-            {/* RIGHT SIDE — CASE STUDIES */}
-            <aside className="lg:mt-16">
-              <p className="text-xl font-bold text-white">
-                Case Studies
-              </p>
+        </div>
+      </section>
 
-              <div className="mt-4 flex flex-col gap-2">
-                <Link
-                  href="/work/edi-migration"
-                  className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
-                >
-                  EDI Integration Migration After an Acquisition
-                </Link>
+      {/* =========================================================
+          RESPONSIBILITIES & PROJECTS
+      ========================================================= */}
+      <section id="responsibilities-projects" className="bg-black text-white">
+        <div className="mx-auto w-full max-w-6xl px-8 py-16 sm:py-20">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
+            Responsibilities &amp; Projects
+          </p>
+          <h2 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
+            Experience you can explore.
+          </h2>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-400">
+            Select a project to see where I applied each responsibility.
+          </p>
 
-                <Link
-                  href="/work/edi-onboarding"
-                  className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
-                >
-                  Automating an EDI Onboarding Workflow
-                </Link>
-              <Link
-                href="/work/edi-operations"
-                className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
+          {/* Three columns on desktop, stacked responsibility groups on mobile. */}
+          <div className="mt-10 border-b border-zinc-800">
+            <div className="hidden grid-cols-12 gap-6 border-b border-zinc-600 pb-4 text-xs font-semibold uppercase tracking-[0.12em] text-zinc-400 md:grid">
+              <div className="col-span-3">Project Responsibility</div>
+              <div className="col-span-5">What I Actually Did</div>
+              <div className="col-span-4">Projects</div>
+            </div>
+            {responsibilities.map(({ responsibility, description, projects }) => (
+              <div
+                key={responsibility}
+                className="grid gap-3 border-t border-zinc-800 py-6 first:border-t-0 md:grid-cols-12 md:gap-6 md:py-7"
               >
-                EDI Operations Process Analysis &amp; Workflow Optimization
-              </Link>
-              <Link
-                href="/work/shared-inbox"
-                className="text-base font-normal leading-6 text-sky-400 transition hover:text-sky-300"
-              >
-                EDI Shared Inbox Consolidation
-              </Link>
+                <h3 className="text-base font-semibold leading-6 text-white md:col-span-3">
+                  {responsibility}
+                </h3>
+                <p className="text-sm leading-6 text-zinc-300 md:col-span-5">
+                  {description}
+                </p>
+                <div className="flex flex-col items-start gap-2 md:col-span-4">
+                  {projects.map(({ title, href }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="text-sm leading-6 text-sky-400 underline-offset-4 transition hover:text-sky-300 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+                    >
+                      {title}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </aside>
-
-
-          </div>
-
-          {/* NEXT SECTION */}
-          <div className="mt-12">
-            <a
-              href="#selected-work"
-              className="text-sm font-medium text-white transition hover:text-sky-400"
-            >
-              View Selected Work ↓
-            </a>
+            ))}
           </div>
         </div>
       </section>
@@ -474,65 +474,6 @@ export default function Home() {
             </article>
           </div>
 
-          {/* NEXT SECTION */}
-          <div className="mt-10">
-            <a
-              href="#responsibilities-projects"
-              className="text-sm font-medium text-zinc-950 transition hover:text-blue-700"
-            >
-              Responsibilities & Projects ↓
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          RESPONSIBILITIES & PROJECTS
-      ========================================================= */}
-      <section id="responsibilities-projects" className="bg-black text-white">
-        <div className="mx-auto w-full max-w-6xl px-8 py-16 sm:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            Responsibilities &amp; Projects
-          </p>
-          <h2 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
-            Experience you can explore.
-          </h2>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-400">
-            Select a project to see where I applied each responsibility.
-          </p>
-
-          {/* Three columns on desktop, stacked responsibility groups on mobile. */}
-          <div className="mt-10 border-b border-zinc-800">
-            <div className="hidden grid-cols-12 gap-6 border-b border-zinc-600 pb-4 text-xs font-semibold uppercase tracking-[0.12em] text-zinc-400 md:grid">
-              <div className="col-span-3">Project Responsibility</div>
-              <div className="col-span-5">What I Actually Did</div>
-              <div className="col-span-4">Projects</div>
-            </div>
-            {responsibilities.map(({ responsibility, description, projects }) => (
-              <div
-                key={responsibility}
-                className="grid gap-3 border-t border-zinc-800 py-6 first:border-t-0 md:grid-cols-12 md:gap-6 md:py-7"
-              >
-                <h3 className="text-base font-semibold leading-6 text-white md:col-span-3">
-                  {responsibility}
-                </h3>
-                <p className="text-sm leading-6 text-zinc-300 md:col-span-5">
-                  {description}
-                </p>
-                <div className="flex flex-col items-start gap-2 md:col-span-4">
-                  {projects.map(({ title, href }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="text-sm leading-6 text-sky-400 underline-offset-4 transition hover:text-sky-300 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
-                    >
-                      {title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
