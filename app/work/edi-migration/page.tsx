@@ -106,7 +106,7 @@ export default function EdiMigrationCaseStudy() {
       <section className="border-b border-zinc-200">
         <div className="mx-auto max-w-6xl px-8 py-16">
           <div className="max-w-4xl">
-            <h2 className="text-3xl font-bold tracking-tight">
+            <h2 className="text-3xl font-bold tracking-tight" id="challenge">
               The Challenge
             </h2>
 
@@ -141,7 +141,7 @@ export default function EdiMigrationCaseStudy() {
       <section className="bg-zinc-50">
         <div className="mx-auto max-w-6xl px-8 py-16">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight">
+            <h2 className="text-3xl font-bold tracking-tight" id="approach">
               How I Approached the Work
             </h2>
 
@@ -159,7 +159,7 @@ export default function EdiMigrationCaseStudy() {
                 Organize
               </p>
 
-              <h3 className="mt-3 text-xl font-bold">
+              <h3 className="mt-3 text-xl font-bold" id="progress-tracking">
                 Keep the work visible
               </h3>
 
@@ -177,7 +177,7 @@ export default function EdiMigrationCaseStudy() {
                 Automate
               </p>
 
-              <h3 className="mt-3 text-xl font-bold">
+              <h3 className="mt-3 text-xl font-bold" id="automating-tasks">
                 Reduce repetitive work
               </h3>
 
@@ -195,7 +195,7 @@ export default function EdiMigrationCaseStudy() {
                 Test
               </p>
 
-              <h3 className="mt-3 text-xl font-bold">
+              <h3 className="mt-3 text-xl font-bold" id="integration-testing">
                 Handle more troubleshooting directly
               </h3>
 
@@ -213,7 +213,7 @@ export default function EdiMigrationCaseStudy() {
                 Coordinate
               </p>
 
-              <h3 className="mt-3 text-xl font-bold">
+              <h3 className="mt-3 text-xl font-bold" id="project-coordination">
                 Keep the project moving
               </h3>
 
