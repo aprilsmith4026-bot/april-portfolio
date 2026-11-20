@@ -1,6 +1,189 @@
 import Link from "next/link";
 import { Roboto } from "next/font/google";
 
+const responsibilities = [
+  {
+    "responsibility": "Process Discovery",
+    "description": "Analyzed and documented existing workflows, dependencies, and areas of inefficiency.",
+    "projects": [
+      {
+        "title": "EDI Operations Process Analysis & Workflow Optimization",
+        "href": "/work/edi-operations#current-future-state"
+      },
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#workflow-documentation"
+      },
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#project-overview"
+      }
+    ]
+  },
+  {
+    "responsibility": "Requirements Gathering",
+    "description": "Identified business rules, data needs, decision points, and technical requirements.",
+    "projects": [
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#requirements"
+      },
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#coordinating-change"
+      }
+    ]
+  },
+  {
+    "responsibility": "Solution Design",
+    "description": "Collaborated on practical approaches to technical constraints and redesigned workflows.",
+    "projects": [
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#supporting-build"
+      },
+      {
+        "title": "EDI Operations Process Analysis & Workflow Optimization",
+        "href": "/work/edi-operations#current-future-state"
+      },
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#shared-workflow"
+      }
+    ]
+  },
+  {
+    "responsibility": "Data Analysis",
+    "description": "Used data queries, operational records, and reporting tools to investigate issues and support decisions.",
+    "projects": [
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#sql-queries"
+      },
+      {
+        "title": "EDI Operations Process Analysis & Workflow Optimization",
+        "href": "/work/edi-operations#backlog-analysis"
+      },
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#measuring-work"
+      }
+    ]
+  },
+  {
+    "responsibility": "Development Collaboration",
+    "description": "Worked directly with technical teams to clarify requirements, resolve gaps, and support implementation.",
+    "projects": [
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#supporting-build"
+      },
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#coordinating-change"
+      }
+    ]
+  },
+  {
+    "responsibility": "Workflow Automation",
+    "description": "Reduced repetitive steps through automation, reusable tools, and process changes.",
+    "projects": [
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#workflow-change"
+      },
+      {
+        "title": "EDI Operations Process Analysis & Workflow Optimization",
+        "href": "/work/edi-operations#vba-automation"
+      },
+      {
+        "title": "EDI Integration Migration After an Acquisition",
+        "href": "/work/edi-migration#automating-tasks"
+      }
+    ]
+  },
+  {
+    "responsibility": "Testing & Validation",
+    "description": "Verified data, configurations, and workflow results against expected business outcomes.",
+    "projects": [
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#testing-validation"
+      },
+      {
+        "title": "EDI Integration Migration After an Acquisition",
+        "href": "/work/edi-migration#integration-testing"
+      },
+      {
+        "title": "EDI Operations Process Analysis & Workflow Optimization",
+        "href": "/work/edi-operations#backlog-analysis"
+      }
+    ]
+  },
+  {
+    "responsibility": "Implementation Planning",
+    "description": "Organized project activities, tracked dependencies, and coordinated production readiness.",
+    "projects": [
+      {
+        "title": "EDI Integration Migration After an Acquisition",
+        "href": "/work/edi-migration#project-coordination"
+      },
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#implementation-prep"
+      }
+    ]
+  },
+  {
+    "responsibility": "Stakeholder Coordination",
+    "description": "Connected business teams, technical teams, and partners to keep work moving.",
+    "projects": [
+      {
+        "title": "EDI Integration Migration After an Acquisition",
+        "href": "/work/edi-migration#project-coordination"
+      },
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#coordinating-change"
+      }
+    ]
+  },
+  {
+    "responsibility": "Reporting & Monitoring",
+    "description": "Built tracking and reporting to make progress, backlogs, and operational performance visible.",
+    "projects": [
+      {
+        "title": "EDI Operations Process Analysis & Workflow Optimization",
+        "href": "/work/edi-operations#jira-reporting"
+      },
+      {
+        "title": "EDI Integration Migration After an Acquisition",
+        "href": "/work/edi-migration#progress-tracking"
+      }
+    ]
+  },
+  {
+    "responsibility": "Documentation & Training",
+    "description": "Created reusable process guidance and helped teams adopt updated workflows.",
+    "projects": [
+      {
+        "title": "EDI Shared Inbox Consolidation",
+        "href": "/work/shared-inbox#team-adoption"
+      },
+      {
+        "title": "Automating an EDI Onboarding Workflow",
+        "href": "/work/edi-onboarding#workflow-documentation"
+      },
+      {
+        "title": "EDI Integration Migration After an Acquisition",
+        "href": "/work/edi-migration#project-coordination"
+      }
+    ]
+  }
+];
+
+
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -294,140 +477,62 @@ export default function Home() {
           {/* NEXT SECTION */}
           <div className="mt-10">
             <a
-              href="#how-i-work"
+              href="#responsibilities-projects"
               className="text-sm font-medium text-zinc-950 transition hover:text-blue-700"
             >
-              How I Work ↓
+              Responsibilities & Projects ↓
             </a>
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          HOW I WORK
+          RESPONSIBILITIES & PROJECTS
       ========================================================= */}
-      <section
-        id="how-i-work"
-        className="flex min-h-screen items-center bg-black text-white"
-      >
-        <div className="mx-auto w-full max-w-6xl px-8 py-12">
-
-          {/* SECTION INTRO */}
+      <section id="responsibilities-projects" className="bg-black text-white">
+        <div className="mx-auto w-full max-w-6xl px-8 py-16 sm:py-20">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">
-            How I Work
+            Responsibilities &amp; Projects
           </p>
-
           <h2 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
-            I turn what I learn into knowledge other people can use.
+            Experience you can explore.
           </h2>
-
           <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-400">
-            When the answer is not already documented, I work through the
-            product or process until I understand it, capture what I learn,
-            and turn that knowledge into something others can use.
+            Select a project to see where I applied each responsibility.
           </p>
 
-          {/* FOUR-STEP GRID */}
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-
-            {/* DISCOVER */}
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
-              <h3 className="text-xl font-bold">
-                Discover
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-400">
-                I start with the information available. When documentation is
-                incomplete, I test, validate, and retrace the process until I
-                understand how it actually works.
-              </p>
+          {/* Three columns on desktop, stacked responsibility groups on mobile. */}
+          <div className="mt-10 border-b border-zinc-800">
+            <div className="hidden grid-cols-12 gap-6 border-b border-zinc-600 pb-4 text-xs font-semibold uppercase tracking-[0.12em] text-zinc-400 md:grid">
+              <div className="col-span-3">Project Responsibility</div>
+              <div className="col-span-5">What I Actually Did</div>
+              <div className="col-span-4">Projects</div>
             </div>
-
-            {/* DOCUMENT */}
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
-              <h3 className="text-xl font-bold">
-                Document
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-400">
-                I capture what I learn as I go, building reusable process
-                documentation, workflows, and SOPs so the knowledge is
-                available when it is needed again.
-              </p>
-            </div>
-
-            {/* TRANSLATE */}
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
-              <h3 className="text-xl font-bold">
-                Translate
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-400">
-                I adapt that knowledge for technical teams, managers,
-                stakeholders, and end users so each audience has the context
-                they need to move forward.
-              </p>
-            </div>
-
-            {/* ENABLE */}
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
-              <h3 className="text-xl font-bold">
-                Enable
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-400">
-                I reuse that knowledge to support implementation,
-                troubleshooting, questions, and training so others can
-                successfully use and support the solution.
-              </p>
-            </div>
+            {responsibilities.map(({ responsibility, description, projects }) => (
+              <div
+                key={responsibility}
+                className="grid gap-3 border-t border-zinc-800 py-6 first:border-t-0 md:grid-cols-12 md:gap-6 md:py-7"
+              >
+                <h3 className="text-base font-semibold leading-6 text-white md:col-span-3">
+                  {responsibility}
+                </h3>
+                <p className="text-sm leading-6 text-zinc-300 md:col-span-5">
+                  {description}
+                </p>
+                <div className="flex flex-col items-start gap-2 md:col-span-4">
+                  {projects.map(({ title, href }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="text-sm leading-6 text-sky-400 underline-offset-4 transition hover:text-sky-300 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+                    >
+                      {title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* BACKGROUND */}
-          <div className="mt-12 border-t border-zinc-800 pt-8">
-            <p className="max-w-4xl text-xl leading-8 text-zinc-300">
-              My background spans implementation, integration, EDI operations,
-              workflow analysis, and automation. I&apos;m at my best when a
-              problem crosses the line between business operations and
-              technology and someone needs to make the pieces fit.
-            </p>
-          </div>
-
-          {/* CASE STUDY LINKS */}
-          <div className="mt-12 border-t border-zinc-800 pt-8">
-            <p className="text-xl font-bold text-white">
-              Case Studies
-            </p>
-
-            <div className="mt-4 flex flex-col gap-2">
-              <Link
-                href="/work/edi-migration"
-                className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
-              >
-                EDI Integration Migration After an Acquisition
-              </Link>
-
-              <Link
-                href="/work/edi-onboarding"
-                className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
-              >
-                Automating an EDI Onboarding Workflow
-              </Link>
-              <Link
-                href="/work/edi-operations"
-                className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
-              >
-                EDI Operations Process Analysis &amp; Workflow Optimization
-              </Link>
-              <Link
-                href="/work/shared-inbox"
-                className="text-lg font-normal leading-7 text-sky-400 transition hover:text-sky-300"
-              >
-                EDI Shared Inbox Consolidation
-              </Link>
-            </div>
-          </div>
-
         </div>
       </section>
 
