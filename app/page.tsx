@@ -107,6 +107,10 @@ const responsibilities = [
     "description": "Verified data, configurations, and workflow results against expected business outcomes.",
     "projects": [
       {
+        "title": "TMS Implementation & Customer Adoption",
+        "href": "/work/tms-implementation#project-overview"
+      },
+      {
         "title": "Automating an EDI Onboarding Workflow",
         "href": "/work/edi-onboarding#testing-validation"
       },
@@ -125,6 +129,10 @@ const responsibilities = [
     "description": "Organized project activities, tracked dependencies, and coordinated production readiness.",
     "projects": [
       {
+        "title": "TMS Implementation & Customer Adoption",
+        "href": "/work/tms-implementation#project-overview"
+      },
+      {
         "title": "EDI Integration Migration After an Acquisition",
         "href": "/work/edi-migration#project-coordination"
       },
@@ -138,6 +146,10 @@ const responsibilities = [
     "responsibility": "Stakeholder Coordination",
     "description": "Connected business teams, technical teams, and partners to keep work moving.",
     "projects": [
+      {
+        "title": "TMS Implementation & Customer Adoption",
+        "href": "/work/tms-implementation#project-overview"
+      },
       {
         "title": "EDI Integration Migration After an Acquisition",
         "href": "/work/edi-migration#project-coordination"
@@ -166,6 +178,10 @@ const responsibilities = [
     "responsibility": "Documentation & Training",
     "description": "Created reusable process guidance and helped teams adopt updated workflows.",
     "projects": [
+      {
+        "title": "TMS Implementation & Customer Adoption",
+        "href": "/work/tms-implementation#training-adoption"
+      },
       {
         "title": "EDI Shared Inbox Consolidation",
         "href": "/work/shared-inbox#team-adoption"
@@ -320,6 +336,33 @@ export default function Home() {
           {/* PROJECTS */}
           <div className="mt-8 grid items-start gap-6 lg:grid-cols-2">
 
+            {/* TMS IMPLEMENTATION EXPERIENCE */}
+            <article className="rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+                Enterprise Software Implementation
+              </p>
+              <h3 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
+                TMS Implementation &amp; Customer Adoption
+              </h3>
+              <p className="mt-4 text-lg leading-7 text-zinc-600">
+                Preparing business data, validating workflows, training users, and supporting the transition to live transportation operations.
+              </p>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl bg-blue-50 p-4">
+                  <p className="text-4xl font-bold text-blue-700">200+</p>
+                  <p className="mt-1 font-medium text-zinc-700">Accounts supported</p>
+                </div>
+                <div className="rounded-2xl bg-zinc-100 p-5">
+                  <p className="text-4xl font-bold text-zinc-800">300+</p>
+                  <p className="mt-1 font-medium text-zinc-700">Training hours delivered</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Link href="/work/tms-implementation" className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700 transition hover:text-blue-900">
+                  Read case study
+                </Link>
+              </div>
+            </article>
             {/* MIGRATION PROJECT */}
             <article className="rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
